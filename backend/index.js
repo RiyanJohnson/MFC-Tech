@@ -31,10 +31,6 @@ app.post('/post', (req, res) => {
             error: "Text field is required"
         })
     }
-
-    const email = text.email
-    console.log("Email received:", email)
-
     res.status(201).json({
         message: "Data received successfully",
         data: text
